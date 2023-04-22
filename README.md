@@ -74,3 +74,66 @@ podemos fazer coerção de variaveis
 $num = (int) "940";
 var_dump($num); #  int(940)
 ```
+
+## String
+
+link do [video](https://www.youtube.com/watch?v=Vn1PGAfnG_s&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&index=22&t=202s&ab_channel=CursoemV%C3%ADdeo)
+
+Temos quatro tipos de String em PHP.
+
+- double quoted ("")
+- single quoted ('')
+- single herodoc 
+- single nowdoc
+
+irei falar falar mais de double quoted e single quoted.
+
+### Como concatenar uma string?
+
+bem com a utilização do `.` que e o operador de concatenação de strings
+
+### double quoted ("")
+
+Escrever entre aspas duplas a a interpretação do que esta dentro dessas aspas veja o exemplo:
+
+``` php
+$sabor = "passas ao rum";
+echo "Esse sorvete de $sabor e uma delicia";
+# Esse sorvete de passas ao rum e uma delicia
+```
+
+tambêm podeira ser escrito dessa forma:
+
+``` php
+$sabor = "passas ao rum";
+echo "Esse sorvete de" . $sabor . "e uma delicia";
+# Esse sorvete de passas ao rum e uma delicia
+```
+
+### single quoted ('')
+
+Escrever entre aspas simples e não a interpretação do que esta dentro dessas aspas veja o exemplo:
+
+```php
+    $sabor = "passas ao rum";
+    echo 'Esse sorvete de $sabor e uma delicia';
+    # Esse sorvete de $sabor e uma delicia
+```
+
+tambêm podeira ser escrito dessa forma:
+
+``` php
+    $sabor = "passas ao rum";
+    echo 'Esse sorvete de ' . $sabor .  'e uma delicia';
+    # Esse sorvete de passas ao rum e uma delicia
+```
+### Como escapar uma string
+
+O que seria uma serequencia de escape nada mais e do que colocar contra barra na frente do caracter reservado veja o exemplo.
+
+``` php
+    $nome ="Natan";
+    $sobrenome = "Xavier";
+    echo "$nome \"dev\" $sobrenome";
+    # Natan dev Xavier
+```
